@@ -5,7 +5,7 @@ using UnityEngine;
 public enum SCENENAME
 {
     TITLE,
+    ASSETLOAD,
     LOADING,
-    MAIN,
-    STAGE
+    MAIN
 }
