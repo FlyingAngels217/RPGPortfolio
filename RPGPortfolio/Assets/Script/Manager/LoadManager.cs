@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Unity.UI;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class LoadManager : MonoBehaviour
 {
@@ -17,8 +16,8 @@ public class LoadManager : MonoBehaviour
 
     public static void LoadScene(string sceneName)
     {
-        nextScene= sceneName;
-        SceneManager.LoadScene("LoadingScene");
+        nextScene = sceneName;
+        SceneManager.LoadScene("Loading");
     }
 
     IEnumerator LoadScene()

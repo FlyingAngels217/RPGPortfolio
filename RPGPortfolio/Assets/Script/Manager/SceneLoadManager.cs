@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,6 +20,7 @@ public class SceneLoadManager : MonoBehaviour
             case SCENENAME.LOADING:
                 break;
             case SCENENAME.MAIN:
+                LoadManager.LoadScene("Game");
                 break;
         }
     }
