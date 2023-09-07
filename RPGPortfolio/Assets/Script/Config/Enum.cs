@@ -9,3 +9,10 @@ public enum SCENENAME
     LOADING,
     MAIN
 }
+
+public enum FLAG
+{
+    PLAYER,
+    ENEMY,
+    NETURAL
+}
