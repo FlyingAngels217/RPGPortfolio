@@ -13,6 +13,10 @@ public class Skill : ScriptableObject
     public string DescriptionId { get { return descriptionid; } set { descriptionid= value; } }
 
     [SerializeField]
+    int needmp;
+    public int NeedMp { get { return needmp; } set { needmp = value; } }
+
+    [SerializeField]
     List<Effect> effects;
     public List<Effect> Effects { get { return effects; } set { effects = value; } }
 
