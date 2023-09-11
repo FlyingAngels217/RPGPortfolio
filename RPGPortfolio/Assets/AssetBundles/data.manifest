@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 3937735160
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 36a816ae5b5285a23b3d4c84c26dab7c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2e8e29883bff4c332d691a086e2e0d95
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: b7305af670daaba4680fe000787d24b0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7458eb402f812e641ba000b53f07800f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 07b91bf5af03ccf44b44318cd445a619, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resoruces/List/UnitList.asset
+- Assets/Resoruces/List/SkillList.asset
+- Assets/Resoruces/List/EffectList.asset
+Dependencies: []

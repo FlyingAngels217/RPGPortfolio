@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Effect", menuName = "ScriptableObject/Data/Unit", order = int.MaxValue)]
-public class Effect : MonoBehaviour
+[CreateAssetMenu(fileName = "Effect", menuName = "ScriptableObject/Data/Effect", order = int.MaxValue)]
+public class Effect : ScriptableObject
 {
     [SerializeField]
     string effectid;

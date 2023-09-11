@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "SkillList", menuName = "ScriptableObject/List/Skills", order = int.MaxValue)]
-public class SkillList : MonoBehaviour
+public class SkillList : ScriptableObject
 {
     [SerializeField]
     public List<Skill> skills;

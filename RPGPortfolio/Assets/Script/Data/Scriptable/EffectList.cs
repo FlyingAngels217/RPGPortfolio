@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "EffectList", menuName = "ScriptableObject/List/Effects", order = int.MaxValue)]
-public class EffectList : MonoBehaviour
+public class EffectList : ScriptableObject
 {
     [SerializeField]
     public List<Effect> effects;

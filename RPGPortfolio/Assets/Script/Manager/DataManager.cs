@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class DataManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    List<Effect> L_Effects;
+    List<Skill> L_Skills;
+    List<Unit> L_Units;
 
-    // Update is called once per frame
-    void Update()
+    // 데이터 링크 - 무조건 에셋번들 체크 후에 호출되어야 함.
+    public void DataSetting()
     {
-        
+
     }
 }

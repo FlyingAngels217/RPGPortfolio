@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.UIElements;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Unit", menuName = "ScriptableObject/Data/Unit", order = int.MaxValue)]
