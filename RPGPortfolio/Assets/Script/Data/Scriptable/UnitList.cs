@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "UnitList", menuName = "ScriptableObject/List", order = int.MaxValue)]
+[CreateAssetMenu(fileName = "UnitList", menuName = "ScriptableObject/List/Units", order = int.MaxValue)]
 public class UnitList : ScriptableObject
 {
     [SerializeField]

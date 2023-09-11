@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "Effect", menuName = "ScriptableObject/Data/Unit", order = int.MaxValue)]
 public class Effect : MonoBehaviour
 {
     [SerializeField]
