@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoadManager : MonoBehaviour
 {
-    private LoadManager _LoadManager;
-    public SceneLoadManager()
+    private DataManager _DataManager;
+
+    public SceneLoadManager(DataManager dataManager)
     {
-        _LoadManager = new LoadManager(/*프로그래스바 값*/);
+        _DataManager = dataManager;
     }
 
     public void LoadScene(SCENENAME scene)

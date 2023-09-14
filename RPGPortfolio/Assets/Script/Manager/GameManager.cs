@@ -15,15 +15,22 @@ public class GameManager : Singleton<GameManager>
     {
         _DataManager = new DataManager();
         _StageManager= new StageManager();
-        _SceneLoadManager = new SceneLoadManager();
+        _SceneLoadManager = new SceneLoadManager(_DataManager);
 
         DebugRand = Random.Range(0, 99999);
         Debug.Log("생성 " + DebugRand);
+        DontDestroyOnLoad(this.gameObject);
+    }
+
+    public DataManager SettingDataManager()
+    {
+        return _DataManager;
     }
 
     public void GameStart()
     {
         _SceneLoadManager.LoadScene(SCENENAME.MAIN);
+        _DataManager.Test();
         Debug.Log("게임시작 " + DebugRand);
     }
 }
