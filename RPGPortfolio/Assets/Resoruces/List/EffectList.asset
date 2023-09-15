@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7305af670daaba4680fe000787d24b0, type: 3}
   m_Name: EffectList
   m_EditorClassIdentifier: 
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: cbff8aa80245abf4bbf6e02a1391a882, type: 2}
+  - {fileID: 11400000, guid: 4bca1a349e5db0942a4bdd212d379297, type: 2}
+  - {fileID: 11400000, guid: 57edde429d40fe649b548cbbc818d8d8, type: 2}

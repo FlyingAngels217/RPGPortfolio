@@ -1,25 +1,39 @@
 ManifestFileVersion: 0
-CRC: 3937735160
+CRC: 2604682417
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 36a816ae5b5285a23b3d4c84c26dab7c
+    Hash: 0f523f23be3a94f6585e50a0e87ddb18
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 2e8e29883bff4c332d691a086e2e0d95
+    Hash: ae6dd8dd26f540567373be4b85591e79
 HashAppended: 0
 ClassTypes:
 - Class: 114
-  Script: {fileID: 11500000, guid: b7305af670daaba4680fe000787d24b0, type: 3}
+  Script: {fileID: 11500000, guid: 07b91bf5af03ccf44b44318cd445a619, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 7458eb402f812e641ba000b53f07800f, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 07b91bf5af03ccf44b44318cd445a619, type: 3}
+  Script: {fileID: 11500000, guid: b7305af670daaba4680fe000787d24b0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ee73ff34ca272424794e5440cc09439a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4edde8882a4d44b4791b3bafe3676ea4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 44fe876658fb0be4da3b5aa3409dc94d, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
+- Assets/Resoruces/Object/Skill/PAttack.asset
+- Assets/Resoruces/Object/Effect/PAttack.asset
 - Assets/Resoruces/List/UnitList.asset
+- Assets/Resoruces/Object/Effect/PSkill.asset
+- Assets/Resoruces/Object/Unit/Enemy.asset
+- Assets/Resoruces/Object/Unit/Player.asset
+- Assets/Resoruces/Object/Effect/ESkill.asset
 - Assets/Resoruces/List/SkillList.asset
+- Assets/Resoruces/Object/Skill/PSkill.asset
 - Assets/Resoruces/List/EffectList.asset
+- Assets/Resoruces/Object/Skill/ESkill.asset
 Dependencies: []

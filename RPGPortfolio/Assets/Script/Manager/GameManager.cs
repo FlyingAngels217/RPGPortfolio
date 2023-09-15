@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    DataManager _DataManager;
+    DataManager _DataManager = null;
     StageManager _StageManager;
     SceneLoadManager _SceneLoadManager;
 
@@ -13,7 +13,7 @@ public class GameManager : Singleton<GameManager>
 
     private void Awake()
     {
-        _DataManager = new DataManager();
+        _DataManager = this.GetComponent<DataManager>();
         _StageManager= new StageManager();
         _SceneLoadManager = new SceneLoadManager(_DataManager);
 

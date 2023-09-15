@@ -9,7 +9,7 @@ public class LoadManager : MonoBehaviour
 {
     public static string nextScene;
 
-    private GameManager _GameManager;
+    public GameManager _GameManager;
     private DataManager _DataManager;
 
     private void Start()
@@ -30,7 +30,7 @@ public class LoadManager : MonoBehaviour
         yield return null;
 
         // 에셋번들 로드부
-        
+        _DataManager.LoadAssetBundle();
 
         yield return null;
         
@@ -52,5 +52,10 @@ public class LoadManager : MonoBehaviour
                 yield break;
             }
         }
+    }
+
+    IEnumerator LoadAssetBundle()
+    {
+        yield return null;
     }
 }

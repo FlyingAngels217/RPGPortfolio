@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07b91bf5af03ccf44b44318cd445a619, type: 3}
-  m_Name: UnitList
+  m_Script: {fileID: 11500000, guid: ee73ff34ca272424794e5440cc09439a, type: 3}
+  m_Name: ESkill
   m_EditorClassIdentifier: 
-  units:
-  - {fileID: 11400000, guid: 44cb9b77f44bb0a4189baecbfb791956, type: 2}
-  - {fileID: 11400000, guid: 32791108400c7e9418203d1354bf8097, type: 2}
+  nameid: 
+  descriptionid: 
+  needmp: 0
+  effects: []

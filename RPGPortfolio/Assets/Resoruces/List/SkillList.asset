@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7458eb402f812e641ba000b53f07800f, type: 3}
   m_Name: SkillList
   m_EditorClassIdentifier: 
-  skills: []
+  skills:
+  - {fileID: 11400000, guid: 66fab90d65131794cb29bfc66bca4624, type: 2}
+  - {fileID: 11400000, guid: 3d34cd1f05028b04e92437914e659c89, type: 2}
+  - {fileID: 11400000, guid: 0de9f5c1fa23efa4ea3f4eb1f24df8b0, type: 2}

@@ -1,4 +1,3 @@
-using OpenCover.Framework.Model;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -17,11 +16,6 @@ public class DataManager : MonoBehaviour
         Debug.Log("DB - " + DebugRand);
     }
 
-    public DataManager()
-    {
-        DebugRand = UnityEngine.Random.Range(0, 99999);
-    }
-
     public bool LoadStartData()
     {
         DataReset();
@@ -29,7 +23,7 @@ public class DataManager : MonoBehaviour
     }
 
     // 번들 로드
-    private void LoadAssetBundle()
+    public void LoadAssetBundle()
     {
         StartCoroutine(AssetBundleLoadStart());
     }
@@ -42,11 +36,16 @@ public class DataManager : MonoBehaviour
         yield return request.SendWebRequest();
 
         AssetBundle bundle = DownloadHandlerAssetBundle.GetContent(request);
-        /*
-        AssetBundleRequest bundleRequest = bundle.LoadAssetAsync<GameObject>("Stone");
+        AssetBundleRequest bundleRequest = bundle.LoadAssetAsync<UnitList>("UnitList");
 
         yield return bundleRequest;
-        */
+
+        UnitList TempUnits = (UnitList)bundleRequest.asset;
+
+        for(int i = 0; i < TempUnits.units.Count; i++)
+        {
+            Debug.Log(TempUnits.units[i].name);
+        }
     }
 
     private void DataReset()
