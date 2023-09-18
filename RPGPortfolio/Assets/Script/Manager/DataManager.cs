@@ -16,12 +16,6 @@ public class DataManager : MonoBehaviour
         Debug.Log("DB - " + DebugRand);
     }
 
-    public bool LoadStartData()
-    {
-        DataReset();
-        return true;
-    }
-
     // 번들 로드
     public void LoadAssetBundle()
     {
@@ -30,6 +24,8 @@ public class DataManager : MonoBehaviour
 
     IEnumerator AssetBundleLoadStart()
     {
+        DataReset();
+
         string url = "file:////" + Application.dataPath + "/AssetBundles/data";
         UnityWebRequest request = UnityWebRequestAssetBundle.GetAssetBundle(url);
 
@@ -44,7 +40,29 @@ public class DataManager : MonoBehaviour
 
         for(int i = 0; i < TempUnits.units.Count; i++)
         {
-            Debug.Log(TempUnits.units[i].name);
+            L_Units.Add(TempUnits.units[i]);
+        }
+
+        bundleRequest = bundle.LoadAssetAsync<SkillList>("SkillList");
+
+        yield return bundleRequest;
+
+        SkillList TempSkills = (SkillList)bundleRequest.asset;
+
+        for(int i = 0; i < TempSkills.skills.Count; i++)
+        {
+            L_Skills.Add(TempSkills.skills[i]);
+        }
+
+        bundleRequest = bundle.LoadAssetAsync<EffectList>("EffectList");
+
+        yield return bundleRequest;
+
+        EffectList TempEffects = (EffectList)bundleRequest.asset;
+
+        for(int i = 0; i < TempEffects.effects.Count; i++)
+        {
+            L_Effects.Add(TempEffects.effects[i]);
         }
     }
 

@@ -14,8 +14,8 @@ public class Unit : ScriptableObject
     public FLAG Flag { get { return flag; } set { flag = value; } }
 
     [SerializeField]
-    Animator animatormodel;
-    public Animator AnimatorModel { get { return animatormodel; } set { animatormodel = value; } }
+    GameObject objectmodel;
+    public GameObject ObjectModel { get { return objectmodel; } set { objectmodel = value; } }
 
     [SerializeField]
     int basehp;

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameid: 
   flag: 0
-  animatormodel: {fileID: 0}
+  objectmodel: {fileID: 6356907910330610016, guid: 5213b3cc0757bb3499f0720c25a0253b, type: 3}
   basehp: 0
   basemp: 0
   baseatk: 0
