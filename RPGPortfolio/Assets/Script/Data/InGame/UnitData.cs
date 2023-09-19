@@ -4,24 +4,24 @@ using UnityEngine;
 
 public abstract class UnitData : MonoBehaviour
 {
-    GameObject Model;
+    protected GameObject Model;
 
-    string sName;
-    FLAG eFlag;
+    protected string sName;
+    protected FLAG eFlag;
 
-    int nBaseHP;
-    int nCurrHP;
-    int nBaseMP;
-    int nCurrMP;
+    protected int nBaseHP;
+    protected int nCurrHP;
+    protected int nBaseMP;
+    protected int nCurrMP;
 
-    int nBaseATK;
-    int nCurrATK;
-    int nBaseDEF;
-    int nCurrDEF;
+    protected int nBaseATK;
+    protected int nCurrATK;
+    protected int nBaseDEF;
+    protected int nCurrDEF;
 
-    Animator UnitAnimator;
+    protected Animator UnitAnimator;
 
-    List<SkillData> L_Skills;
+    protected List<SkillData> L_Skills;
 
     public void UnitDataSetting(Unit unit)
     {
