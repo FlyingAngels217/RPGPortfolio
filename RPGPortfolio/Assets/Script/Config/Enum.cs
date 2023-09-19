@@ -16,3 +16,11 @@ public enum FLAG
     ENEMY,
     NETURAL
 }
+
+public enum UNITSTATE
+{
+    IDLE,
+    MOVE,
+    ATTACK,
+    DEATH
+}
