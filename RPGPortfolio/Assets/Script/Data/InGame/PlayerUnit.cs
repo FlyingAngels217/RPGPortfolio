@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerUnit : UnitData
 {
+    public Camera UnitCamera;
+
     // PC Test
     private void Awake()
     {
@@ -13,15 +15,17 @@ public class PlayerUnit : UnitData
     private void FixedUpdate()
     {
         // PC Test
-        if(Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.UpArrow) ||
+            Input.GetKey(KeyCode.DownArrow))
         {
             Move();
         }
-
-        if(Input.GetKey(KeyCode.Space)) 
+        else if(Input.GetKey(KeyCode.Space))
         {
             Attack();
         }
+        else
+            Idle();
     }
 
     public override void Attack()
@@ -44,6 +48,9 @@ public class PlayerUnit : UnitData
     public override void Move()
     {
         UnitAnimator.SetBool("Move", true);
+
+        if (!UnitAnimator.GetBool("Attack"))
+            transform.Rotate(new Vector3(0, 0.3f, 0));
     }
 
     void UnitControl()
