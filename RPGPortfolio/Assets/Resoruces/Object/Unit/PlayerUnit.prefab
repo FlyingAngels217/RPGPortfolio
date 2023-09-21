@@ -6472,7 +6472,7 @@ GameObject:
   - component: {fileID: 6356907910340246546}
   - component: {fileID: -2192320685911792680}
   m_Layer: 0
-  m_Name: TT_HeavySwordman
+  m_Name: PlayerUnit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

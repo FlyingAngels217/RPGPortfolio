@@ -14,18 +14,18 @@ public class PlayerUnit : UnitData
 
     private void FixedUpdate()
     {
-        // PC Test
-        if (Input.GetKey(KeyCode.UpArrow) ||
-            Input.GetKey(KeyCode.DownArrow))
-        {
-            Move();
-        }
-        else if(Input.GetKey(KeyCode.Space))
-        {
-            Attack();
-        }
-        else
-            Idle();
+        //// PC Test
+        //if (Input.GetKey(KeyCode.UpArrow) ||
+        //    Input.GetKey(KeyCode.DownArrow))
+        //{
+        //    Move();
+        //}
+        //else if(Input.GetKey(KeyCode.Space))
+        //{
+        //    Attack();
+        //}
+        //else
+        //    Idle();
     }
 
     public override void Attack()
