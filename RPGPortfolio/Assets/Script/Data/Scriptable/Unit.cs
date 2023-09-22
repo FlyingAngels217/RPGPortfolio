@@ -7,7 +7,7 @@ public class Unit : ScriptableObject
 {
     [SerializeField]
     string nameid;
-    public string NameId{ get { return nameid; } set { nameid = value; } }
+    public string NameId { get { return nameid; } set { nameid = value; } }
 
     [SerializeField]
     FLAG flag;

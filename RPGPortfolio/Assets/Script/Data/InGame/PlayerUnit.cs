@@ -52,19 +52,8 @@ public class PlayerUnit : UnitData
         if (!UnitAnimator.GetBool("Attack"))
             transform.Rotate(new Vector3(0, 0.3f, 0));
     }
-
-    void UnitControl()
+    public void AttackBtn()
     {
-
-    }
-
-    void UnitMoveControl()
-    {
-
-    }
-
-    void UnitSkillControl()
-    {
-
+        Attack();
     }
 }

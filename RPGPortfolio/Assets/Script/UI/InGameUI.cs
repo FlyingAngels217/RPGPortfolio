@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class InGameUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+    // ¡∂¿ÃΩ∫∆Ω
     [SerializeField]
     private RectTransform lever;
     private RectTransform rectTransform;
