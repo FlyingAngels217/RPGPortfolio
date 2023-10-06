@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    DataManager _DataManager = null;
+    DataManager _DataManager;
     StageManager _StageManager;
     SceneLoadManager _SceneLoadManager;
 
@@ -13,8 +13,8 @@ public class GameManager : Singleton<GameManager>
 
     private void Awake()
     {
-        _DataManager = this.GetComponent<DataManager>();
-        _StageManager= new StageManager();
+        _DataManager = GetComponent<DataManager>();
+        _StageManager = GetComponent<StageManager>();
         _SceneLoadManager = new SceneLoadManager(_DataManager);
 
         DebugRand = Random.Range(0, 99999);

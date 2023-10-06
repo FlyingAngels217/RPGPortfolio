@@ -10,6 +10,8 @@ public class DataManager : MonoBehaviour
     List<Skill> L_Skills;
     List<Unit> L_Units;
 
+    List<StageInfo> L_Stage;
+
     int DebugRand;
     public void Test()
     {
@@ -43,6 +45,8 @@ public class DataManager : MonoBehaviour
             L_Units.Add(TempUnits.units[i]);
         }
 
+        //
+
         bundleRequest = bundle.LoadAssetAsync<SkillList>("SkillList");
 
         yield return bundleRequest;
@@ -54,6 +58,8 @@ public class DataManager : MonoBehaviour
             L_Skills.Add(TempSkills.skills[i]);
         }
 
+        //
+
         bundleRequest = bundle.LoadAssetAsync<EffectList>("EffectList");
 
         yield return bundleRequest;
@@ -64,6 +70,20 @@ public class DataManager : MonoBehaviour
         {
             L_Effects.Add(TempEffects.effects[i]);
         }
+
+        //
+
+        bundleRequest = bundle.LoadAssetAsync<StageInfo>("StageData");
+
+        yield return bundleRequest;
+
+        StageList TempStage = (StageList)bundleRequest.asset;
+
+        for(int i = 0; i < TempStage.StageInfo.Count; i++)
+        {
+            L_Stage.Add(TempStage.StageInfo[i]);
+        }
+
     }
 
     private void DataReset()

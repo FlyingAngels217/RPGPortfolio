@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.Build;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "List", menuName = "ScriptableObject/Stage/List", order = int.MaxValue)]
+[CreateAssetMenu(fileName = "Stage", menuName = "ScriptableObject/Stage/Stage", order = int.MaxValue)]
 public class StageInfo : ScriptableObject
 {
     [SerializeField]
