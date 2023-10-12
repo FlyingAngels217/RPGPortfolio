@@ -6,11 +6,14 @@ using UnityEngine.Networking;
 
 public class DataManager : MonoBehaviour
 {
-    List<Effect> L_Effects;
-    List<Skill> L_Skills;
-    List<Unit> L_Units;
+    Dictionary<string, Effect> Dic_Effects;
+    Dictionary<string, Skill> Dic_Skills;
+    Dictionary<string, Unit> Dic_Units;
 
     List<StageInfo> L_Stage;
+
+
+    Dictionary<string, GameObject> Dic_Building;
 
     int DebugRand;
     public void Test()
@@ -42,7 +45,7 @@ public class DataManager : MonoBehaviour
 
         for(int i = 0; i < TempUnits.units.Count; i++)
         {
-            L_Units.Add(TempUnits.units[i]);
+            Dic_Units.Add(TempUnits.units[i].ID, TempUnits.units[i]);
         }
 
         //
@@ -55,7 +58,7 @@ public class DataManager : MonoBehaviour
 
         for(int i = 0; i < TempSkills.skills.Count; i++)
         {
-            L_Skills.Add(TempSkills.skills[i]);
+            Dic_Skills.Add(TempSkills.skills[i].ID, TempSkills.skills[i]);
         }
 
         //
@@ -68,7 +71,7 @@ public class DataManager : MonoBehaviour
 
         for(int i = 0; i < TempEffects.effects.Count; i++)
         {
-            L_Effects.Add(TempEffects.effects[i]);
+            Dic_Effects.Add(TempEffects.effects[i].ID, TempEffects.effects[i]);
         }
 
         //
@@ -84,13 +87,16 @@ public class DataManager : MonoBehaviour
             L_Stage.Add(TempStage.StageInfo[i]);
         }
 
+        //
+
+
     }
 
     private void DataReset()
     {
-        L_Effects = new List<Effect>();
-        L_Skills = new List<Skill>();
-        L_Units = new List<Unit>();
+        Dic_Effects = new Dictionary<string, Effect>();
+        Dic_Skills = new Dictionary<string, Skill>();
+        Dic_Units = new Dictionary<string, Unit>();
     }
 
     // 데이터 링크 - 무조건 에셋번들 체크 후에 호출되어야 함.
@@ -98,8 +104,8 @@ public class DataManager : MonoBehaviour
     {
         DataReset();
 
-        L_Effects = effects;
-        L_Skills = skills;
-        L_Units = units;
+        //L_Effects = effects;
+        //L_Skills = skills;
+        //L_Units = units;
     }
 }

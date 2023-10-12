@@ -1,19 +1,17 @@
 ManifestFileVersion: 0
-CRC: 295624899
+CRC: 2171583917
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f479372fbde1e2c9d6e5338f5a7bea1e
+    Hash: 4b5dfb94f05d85d64a7bc9f8735b7ade
   TypeTreeHash:
     serializedVersion: 2
-    Hash: ca630481091306948bc2835af713de39
+    Hash: b4c0c122f2a0055e263e2241b8d97ace
 HashAppended: 0
 ClassTypes:
 - Class: 1
   Script: {instanceID: 0}
 - Class: 4
-  Script: {instanceID: 0}
-- Class: 20
   Script: {instanceID: 0}
 - Class: 21
   Script: {instanceID: 0}
@@ -27,23 +25,18 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 48
   Script: {instanceID: 0}
-- Class: 74
-  Script: {instanceID: 0}
-- Class: 81
-  Script: {instanceID: 0}
 - Class: 90
   Script: {instanceID: 0}
-- Class: 91
-  Script: {instanceID: 0}
 - Class: 95
-  Script: {instanceID: 0}
-- Class: 114
-  Script: {fileID: 11500000, guid: 04289ecc40ecd884aa27bcd29ee87409, type: 3}
-- Class: 115
   Script: {instanceID: 0}
 - Class: 137
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Resoruces/Object/Model/Unit/PlayerUnit.prefab
+- Assets/Resoruces/Object/Model/Building/House.prefab
+- Assets/Resoruces/Object/Model/Building/Library.prefab
+- Assets/Resoruces/Object/Model/Building/Farm.prefab
+- Assets/Resoruces/Object/Model/Building/Wall_B_gate.prefab
+- Assets/Resoruces/Object/Model/Building/Wall_B_corner.prefab
+- Assets/Resoruces/Object/Model/Building/Wall_B_wall.prefab
 Dependencies: []

@@ -6,6 +6,10 @@ using UnityEngine;
 public class Unit : ScriptableObject
 {
     [SerializeField]
+    string id;
+    public string ID { get { return id; } set { id = value; } }
+
+    [SerializeField]
     string nameid;
     public string NameId { get { return nameid; } set { nameid = value; } }
 

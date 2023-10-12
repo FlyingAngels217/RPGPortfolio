@@ -1,16 +1,14 @@
 ManifestFileVersion: 0
-CRC: 1925676226
+CRC: 1957796824
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 0a71eba02d55a205d12dfdaee55c82e9
+    Hash: dc26779ea4054c07e34549a9c9bb4abc
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 381afac9780f2b0fd45043c326627fb3
+    Hash: 6d3b9ed9366be48827c48a377b1d49a2
 HashAppended: 0
 ClassTypes:
-- Class: 1
-  Script: {instanceID: 0}
 - Class: 114
   Script: {fileID: 11500000, guid: 07b91bf5af03ccf44b44318cd445a619, type: 3}
 - Class: 114
@@ -38,5 +36,4 @@ Assets:
 - Assets/Resoruces/Object/Skill/PSkill.asset
 - Assets/Resoruces/List/EffectList.asset
 - Assets/Resoruces/Object/Skill/ESkill.asset
-Dependencies:
-- E:/DUnity/RPGPortfolio/RPGPortfolio/Assets/AssetBundles/units
+Dependencies: []

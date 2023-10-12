@@ -6,6 +6,10 @@ using UnityEngine;
 public class Effect : ScriptableObject
 {
     [SerializeField]
+    string id;
+    public string ID { get { return id; } set { id = value; } }
+
+    [SerializeField]
     string effectid;
     public string EffectID { get { return effectid; } set { effectid = value; } }
 
